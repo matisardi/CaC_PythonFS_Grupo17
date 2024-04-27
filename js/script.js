@@ -8,15 +8,15 @@ const bgMain = document.getElementById("imgMain");
 let intervalo;
 let img;
 
+for (img = 0; img < images.length; img++) {                     //precarga imágenes
+    bgMain.style.backgroundImage = "url(" + images[img] + ")";
+}
+
 function cambiaFondo() {
     bgMain.style.backgroundImage = "url(" + images[img] + ")";  //cambia imagen de fondo
     img++;
     if (img >= images.length) img = 0;
 }
-
-// for (img = 0; img < images.length; img++) {                     //precarga imágenes
-//     bgMain.style.backgroundImage = "url(" + images[img] + ")";
-// }
 
 img = 0;
 intervalo = setInterval(cambiaFondo, 5000);                     //llama función cambiaFondo luego de 5 seg
