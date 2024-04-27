@@ -11,6 +11,7 @@ body::before {              /*usado para precargar imágenes*/
     left: -9999rem;
     opacity: 0;
 }
+
 header {
     display: flex;
     align-items: center;
