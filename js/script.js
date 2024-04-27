@@ -13,12 +13,12 @@ let img = 0;
 //     bodyBefore.style.content = "url(" + images[i] + ")";
 // }
 
-let intBodyBefore = setInterval(function() {                    //precarga imágenes
-    let i = 0;
-    bodyBefore.style.content = "url(" + images[i] + ")";
-    i++;
-    if (i >= images.length) clearInterval(intBodyBefore);
-}, 200);
+// let intBodyBefore = setInterval(function() {                    //precarga imágenes
+//     let i = 0;
+//     bodyBefore.style.content = "url(" + images[i] + ")";
+//     i++;
+//     if (i >= images.length) clearInterval(intBodyBefore);
+// }, 200);
 
 function cambiaFondo() {
     bgMain.style.backgroundImage = "url(" + images[img] + ")";  //cambia imagen de fondo
