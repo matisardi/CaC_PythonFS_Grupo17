@@ -31,9 +31,9 @@ header nav a:hover {
 }
 
 main {
-    background-image: url(../img/man-woman-running-track-side-view.jpg);
+    background-image: url(../img/people-stretching-park.jpg);   /*imagen de fondo*/
     background-size: cover;
     background-position: center;
     height: 90vh;
-    transition: background-image 2s;
+    transition: background-image 2s;                            /*transición entre imágenes*/
 }
