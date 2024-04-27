@@ -8,9 +8,9 @@ const bgMain = document.getElementById("imgMain");
 let intervalo;
 let img;
 
-for (img = 0; img < images.length; img++) {                     //precarga imágenes
-    bgMain.style.backgroundImage = "url(" + images[img] + ")";
-}
+// for (img = 0; img < images.length; img++) {                     //precarga imágenes
+//     bgMain.style.backgroundImage = "url(" + images[img] + ")";
+// }
 
 function cambiaFondo() {
     bgMain.style.backgroundImage = "url(" + images[img] + ")";  //cambia imagen de fondo
