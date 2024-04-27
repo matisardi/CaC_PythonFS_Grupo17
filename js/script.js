@@ -1,8 +1,8 @@
 let images = [          //imágenes para el fondo, la última está en el css y se ve primera
-    './img/people-stretching-park_modif.jpg',
-    './img/football-trainer-teaching-his-pupils_modif.jpg',
-    './img/young-sportive-couple-doing-yoga-fitness-people-summer-park_modif.jpg',
-    './img/man-woman-running-track-side-view_modif.jpg'
+    "./img/people-stretching-park_modif.jpg",
+    "./img/football-trainer-teaching-his-pupils_modif.jpg",
+    "./img/young-sportive-couple-doing-yoga-fitness-people-summer-park_modif.jpg",
+    "./img/man-woman-running-track-side-view_modif.jpg"
 ];
 const bgMain = document.getElementById("imgMain");
 let intervalo;
