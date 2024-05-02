@@ -1,10 +1,13 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* vero: agrego tipografia */
 }
 
-body::before {              /*usado para precargar imágenes*/
+/* Precarga de imágenes */
+body::before {         /*usado para precargar imágenes*/
     content: none;
     position: absolute;
     top: -9999rem;
@@ -12,7 +15,10 @@ body::before {              /*usado para precargar imágenes*/
     opacity: 0;
 }
 
+/* Estilos del encabezado */
 header {
+    box-sizing: content-box;    /* Reestablece el box-sizing */
+    background-color: rgb(7, 41, 18);    /* vero: Color verde para el header (opcional) */
     display: flex;
     align-items: center;
     height: 10vh;
@@ -23,25 +29,114 @@ header img {
     margin: 5px;
 }
 
-header nav{
-    padding: 0 50px;
+/* Estilos del botón de menú */
+header input[type="checkbox"] {
+    display: none;
+}
+
+header label {
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    color: rgb(151, 231, 99);
+}
+
+/* Estilos de la navegación */
+header nav {
+    padding: 0 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces hacia el margen derecho */
+    align-items: center;
 }
 
 header nav a {
-    padding: 0 10px;
-    color: black;
+    margin-left: 50px; /* vero: agrego espacio entre los enlaces */
+    color: rgb(151, 231, 99); /* vero: Color verde para el header (opcional) */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;   /*vero: cambio tamaño tipografia*/
 }
 
 header nav a:hover {
-    color: grey;
+    color: rgb(255, 255, 255);
 }
 
+/* Estilos del contenido principal */
 main {
-    background-image: url(../img/man-woman-running-track-side-view_modif.jpg);   /*imagen de fondo*/
+    background-image: url(/img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
-    transition: background-image 2s;                            /*transición entre imágenes*/
+    transition: background-image 2s;   /*transición entre imágenes*/
+}
+
+/* Media query para pantallas pequeñas */ /*vero: agrego: responsive*/
+@media screen and (max-width: 768px) {
+    header label {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(7, 41, 18);
+        text-align: center;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+/* Estilos rectángulo h1 *//*vero: agrego: rectangulos*/
+.rectangulo-h1 {
+    background-color: rgb(0, 128, 0); 
+    color: white; 
+    text-align: center; 
+    padding: 5px;
+    margin: 0; 
+    font-size: 14px; 
+}
+
+.rectangulo-h2 {
+    background-color: rgb(151, 231, 99); 
+    color: rgb(7, 41, 18); 
+    text-align: center; 
+    padding: 5px;
+    margin: 0; 
+}
+
+/* Estilos grilla *//*vero*/
+.grilla {
+    display: grid;
+    grid-template-columns: 10px repeat(6, auto) 10px; 
+    gap: 5px; 
+    padding: 5px; 
+    background-color: rgb(255, 255, 255); 
+}
+/* Estilos elem grilla *//*vero*/
+.grilla div {
+    background-color: rgb(255, 255, 255);
+    padding: 15px; 
+    text-align: center; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+/* Estilos 1 y 8 *//*vero*/
+.grilla div:first-child,
+.grilla div:last-child {
+    background-color: transparent; 
+}
+/* Estilo imágenes *//*vero*/
+.grilla img {
+    max-width: 50%; 
+    height: auto;
 }
