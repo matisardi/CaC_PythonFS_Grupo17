@@ -1,4 +1,4 @@
 # TPO: Desarrollo Web HTML, CSS y JavaScript
-## Sitio Web: "Deportes al aire libre"
+## Sitio Web: "Deportes al Aire Libre"
 
-Visita nuestro [sitio web](http://127.0.0.1:5500/index.html)
+Visita nuestro [DeporteOutdoors](http://127.0.0.1:5500/index.html)
