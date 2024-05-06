@@ -1,3 +1,3 @@
 # Trabajo Páctico de Python Full Stack
-## Plataforma de Reserva de Actividades al aire libre
+## Plataforma de deportes al aire libre
 
