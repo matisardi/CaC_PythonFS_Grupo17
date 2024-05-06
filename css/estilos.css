@@ -63,7 +63,7 @@ header nav a:hover {
 
 /* Estilos del contenido principal */
 main {
-    background-image: url(/img/sport-running-00.jpg);
+    background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -96,6 +96,7 @@ main {
         padding: 10px 0;
     }
 }
+
 /* Estilos rectángulo h1 *//*vero: agrego: rectangulos*/
 .rectangulo-h1 {
     background-color: rgb(0, 128, 0); 
