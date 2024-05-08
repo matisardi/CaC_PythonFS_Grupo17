@@ -4,21 +4,9 @@ let images = [          //imágenes para el fondo, la última está en el css y 
     "./img/sport-football-trainer-00.jpg",
     "./img/sport-running-00.jpg"
 ];
-const bodyBefore = document.styleSheets[0].cssRules[1];
-const bgMain = document.getElementById("imgMain");
+const bgMain = document.querySelector('main');
 let intervalo;
 let img = 0;
-
-// for (let i = 0; i < images.length; i++) {                       //precarga imágenes
-//     bodyBefore.style.content = "url(" + images[i] + ")";
-// }
-
-let intBodyBefore = setInterval(function() {                    //precarga imágenes
-    let i = 0;
-    bodyBefore.style.content = "url(" + images[i] + ")";
-    i++;
-    if (i >= images.length) clearInterval(intBodyBefore);
-}, 200);
 
 function cambiaFondo() {
     bgMain.style.backgroundImage = "url(" + images[img] + ")";  //cambia imagen de fondo

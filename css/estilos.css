@@ -6,15 +6,6 @@
     font-family: 'Roboto', sans-serif; /* vero: agrego tipografia */
 }
 
-/* Precarga de imágenes */
-body::before {         /*usado para precargar imágenes*/
-    content: none;
-    position: absolute;
-    top: -9999rem;
-    left: -9999rem;
-    opacity: 0;
-}
-
 /* Estilos del encabezado */
 header {
     box-sizing: content-box;    /* Reestablece el box-sizing */
@@ -66,7 +57,7 @@ main {
     background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 83vh;
     transition: background-image 2s;   /*transición entre imágenes*/
 }
 
@@ -99,12 +90,13 @@ main {
 
 /* Estilos rectángulo h1 *//*vero: agrego: rectangulos*/
 .rectangulo-h1 {
-    background-color: rgb(0, 128, 0); 
-    color: white; 
-    text-align: center; 
+    background-color: rgb(0, 128, 0);
+    color: white;
+    text-align: center;
     padding: 5px;
-    margin: 0; 
-    font-size: 14px; 
+    margin: 0;
+    font-size: 14px;
+    height: 7vh;
 }
 
 .rectangulo-h2 {
