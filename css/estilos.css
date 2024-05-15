@@ -110,26 +110,28 @@ main {
 /* Estilos grilla *//*vero*/
 .grilla {
     display: grid;
-    grid-template-columns: 10px repeat(6, auto) 10px; 
-    gap: 5px; 
-    padding: 5px; 
-    background-color: rgb(255, 255, 255); 
-}
-/* Estilos elem grilla *//*vero*/
-.grilla div {
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+    padding: 5px;
     background-color: rgb(255, 255, 255);
-    padding: 15px; 
-    text-align: center; 
+}
+
+/* Estilos elem grilla *//*vero*/
+.grilla a {
+    padding: 15px;
+    text-align: center;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 /* Estilos 1 y 8 *//*vero*/
-.grilla div:first-child,
+/* .grilla div:first-child,
 .grilla div:last-child {
-    background-color: transparent; 
-}
+    background-color: transparent;
+} */
+
 /* Estilo imágenes *//*vero*/
 .grilla img {
-    max-width: 50%; 
+    max-width: 50%;
     height: auto;
 }
