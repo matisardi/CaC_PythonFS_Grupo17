@@ -61,6 +61,26 @@ main {
     transition: background-image 2s;   /*transición entre imágenes*/
 }
 
+/* Estilos del footer */
+footer {
+    background-color: #073d12; 
+    color: #97e763; 
+    text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+footer a {
+    color: #97e763; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+
 /* Media query para pantallas pequeñas */ /*vero: agrego: responsive*/
 @media screen and (max-width: 768px) {
     header label {
