@@ -6,9 +6,9 @@ let images = [          //imágenes para el fondo, la última está en el css y 
 ];
 let frases = [
     "... y en que lugares practicarlos",
-    "Disfruta de un momento con amigos...",
-    "... mientras realizas una actividad saludable!",
-    "Entérate de los deportes que puedes hacer al aire libre..."
+    "Disfrutá de un momento con amigos...",
+    "... mientras realizás una actividad saludable!",
+    "Enterate de los deportes que podés hacer al aire libre..."
 ];
 let fraseColor = [
     "black",
@@ -16,8 +16,8 @@ let fraseColor = [
     "white",
     "black"
 ];
-const bgMain = document.querySelector('section');
-const fraseActual = document.querySelector('section p');
+const bgMain = document.querySelector('#inicio');
+const fraseActual = document.querySelector('#inicio p');
 let intervalo;
 let cambio = 0;
 

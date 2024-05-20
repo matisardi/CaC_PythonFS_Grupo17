@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <title>Deportes al Aire Libre</title>
+</head>
+<body>
+    <header>
+        <!-- vero: agrego Logo -->
+        <img src="../img/logo-deporte-outdoors-blanco.png" alt="Logo">
+        <!-- vero: Botón de menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">&#9776;</label>
+        <!-- Navegación -->
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="">ACTIVIDADES</a>
+            <a href="#">REGISTRO</a>
+            <a href="">CONSEJOS</a>
+        </nav>
+    </header>
+    <main>    
+    <!--vero: agrego Rectángulo h1 h2 -->
+        <div class="rectangulo-h1">
+            <h1>Registro</h1>
+        </div>
+        <section id="registro">
+            <h2>Registrate para recibir información</h2><br>
+            <h3>Ingresá los siguientes datos</h3>
+            <form id="formRegistro">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Cosme" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Fulanito" required>
+                </div>
+                <div>
+                    <label for="edad">Edad: </label>
+                    <input type="number" name="edad" id="edad" placeholder="39" min="1" max="130" required>
+                </div>
+                <div>
+                    <label for="correo">Email: </label>
+                    <input type="email" name="correo" id="correo" placeholder="nombre@dominio.com" required>
+                </div>
+                <br>
+                <h3>Marcá las actividades de interés</h3>
+                <div>
+                    <input type="checkbox" name="activ1" id="activ1" value="Ciclismo">
+                    <label for="activ1" class="cbox">Ciclismo</label>
+                    <input type="checkbox" name="activ2" id="activ2" value="Skate">
+                    <label for="activ2" class="cbox">Skate</label>
+                    <input type="checkbox" name="activ3" id="activ3" value="Roller">
+                    <label for="activ3" class="cbox">Roller</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="activ4" id="activ4" value="Futbol">
+                    <label for="activ4" class="cbox">Futbol</label>
+                    <input type="checkbox" name="activ5" id="activ5" value="Running">
+                    <label for="activ5" class="cbox">Running</label>
+                    <input type="checkbox" name="activ6" id="activ6" value="Stretching">
+                    <label for="activ6" class="cbox">Stretching</label>
+                </div>
+                <br>
+                <h3>Marcá los lugares preferidos</h3>
+                <div>
+                    <input type="checkbox" name="lugar1" id="lugar1" value="Reserva Ecológica">
+                    <label for="lugar1" class="cbox">Reserva Ecológica</label>
+                    <input type="checkbox" name="lugar2" id="lugar2" value="Lagos de Palermo">
+                    <label for="lugar2" class="cbox">Lagos de Palermo</label>
+                    <input type="checkbox" name="lugar3" id="lugar3" value="Parque Sarmiento">
+                    <label for="lugar3" class="cbox">Parque Sarmiento</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lugar4" id="lugar4" value="Parque Chacabuco">
+                    <label for="lugar4" class="cbox">Parque Chacabuco</label>
+                    <input type="checkbox" name="lugar5" id="lugar5" value="Parque Avellaneda">
+                    <label for="lugar5" class="cbox">Parque Avellaneda</label>
+                    <input type="checkbox" name="lugar6" id="lugar6" value="Parque Centenario">
+                    <label for="lugar6" class="cbox">Parque Centenario</label>
+                </div>
+                <p id="respuestaForm"></p>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <!-- vero: agrego Footer -->
+    <footer>
+        <p>&copy; 2024 Deportes al Aire Libre. Todos los derechos reservados.</p>
+        <p>
+            <a href="contacto.html">Contacto</a> | 
+            <a href="politica-privacidad.html">Política de Privacidad</a> | 
+            <a href="terminos-condiciones.html">Términos y Condiciones</a>
+        </p>
+    </footer>
+
+    <script src="../js/validar-form.js"></script>
+</body>
+</html>

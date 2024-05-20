@@ -53,7 +53,7 @@ header nav a:hover {
 }
 
 /* Matias: Estilos del contenido principal */
-section {
+#inicio {
     background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
@@ -62,7 +62,7 @@ section {
 }
 
 /* Matias: Frases en la sección principal */
-section p {
+#inicio p {
     width: 28vw;
     font-size: 2.5rem;
     font-style: italic;
@@ -70,23 +70,53 @@ section p {
     padding-top: 7vh;
 }
 
+#registro {
+    margin: 5vh 5vw;
+}
+
+#formRegistro {
+    margin: 3vh 0;
+}
+
+#formRegistro div {
+    margin: 2vh 0;
+}
+
+.cbox {
+    margin-right: 5vw;
+}
+
+.btn {
+    margin: 2vh 0;
+    padding: 6px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#respuestaForm {
+    margin: 3vh 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(151, 231, 99);
+}
+
 /* Estilos del footer */
 footer {
-    background-color: #073d12; 
-    color: #97e763; 
-    text-align: center; 
-    padding: 20px 0; 
-    width: 100%; 
+    background-color: #073d12;
+    color: #97e763;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
 }
 
 footer a {
-    color: #97e763; 
-    text-decoration: none; 
-    margin: 0 10px; 
+    color: #97e763;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 footer a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 
