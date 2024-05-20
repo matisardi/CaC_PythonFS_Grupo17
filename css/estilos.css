@@ -52,13 +52,22 @@ header nav a:hover {
     color: rgb(255, 255, 255);
 }
 
-/* Estilos del contenido principal */
+/* Matias: Estilos del contenido principal */
 section {
     background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
     height: 83vh;
     transition: background-image 2s;   /*transición entre imágenes*/
+}
+
+/* Matias: Frases en la sección principal */
+section p {
+    width: 28vw;
+    font-size: 2.5rem;
+    font-style: italic;
+    padding-left: 4vw;
+    padding-top: 7vh;
 }
 
 /* Estilos del footer */
