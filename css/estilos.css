@@ -9,7 +9,7 @@
 /* Estilos del encabezado */
 header {
     box-sizing: content-box;  
-    background-color: rgb(7, 41, 18);    /* vero: Color verde para el header (opcional) */
+    background-color: rgb(7, 41, 18); /* Color verde para el header (opcional) */
     display: flex;
     align-items: center;
     height: 10vh;
@@ -42,26 +42,74 @@ header nav {
 }
 
 header nav a {
-    margin-left: 50px; /* vero: agrego espacio entre los enlaces */
-    color: rgb(151, 231, 99); /* vero: Color verde para el header (opcional) */
+    margin-left: 50px; /* Espacio entre los enlaces */
+    color: rgb(151, 231, 99); /* Color verde para el header (opcional) */
     text-decoration: none;
-    font-size: 14px;   /*vero: cambio tamaño tipografia*/
+    font-size: 14px; /* Tamaño de tipografía */
 }
 
 header nav a:hover {
     color: rgb(255, 255, 255);
 }
 
-/* Matias: Estilos del contenido principal */
+/* Estilo para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; /* Fondo transparente */
+    min-width: max-content; /* Se ajusta al tamaño del texto */
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 0; /* Espaciado interno */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px; /* Espaciado interno */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgreen; /* Color de fondo al pasar el cursor */
+    color: black; /* Color del texto al pasar el cursor */
+    font-weight: bold; /* Texto en negrita al pasar el cursor */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Eliminamos el estilo predeterminado del select */
+select#actividades {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Estilos del contenido principal */
 #inicio {
     background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
     height: 83vh;
-    transition: background-image 2s;   /*transición entre imágenes*/
+    transition: background-image 2s; /* transición entre imágenes */
 }
 
-/* Matias: Frases en la sección principal */
+/* Frases en la sección principal */
 #inicio p {
     width: 28vw;
     font-size: 2.5rem;
@@ -119,8 +167,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
-/* Media query para pantallas pequeñas */ /*vero: agrego: responsive*/
+/* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     header label {
         display: block;
@@ -147,7 +194,7 @@ footer a:hover {
     }
 }
 
-/* Estilos rectángulo h1 *//*vero: agrego: rectangulos*/
+/* Estilos rectángulo h1 */
 .rectangulo-h1 {
     background-color: rgb(0, 128, 0);
     color: white;
@@ -166,7 +213,7 @@ footer a:hover {
     margin: 0; 
 }
 
-/* Estilos grilla *//*vero*/
+/* Estilos grilla */
 .grilla {
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -175,7 +222,6 @@ footer a:hover {
     background-color: rgb(255, 255, 255);
 }
 
-/* Estilos elem grilla *//*vero*/
 .grilla a {
     padding: 15px;
     text-align: center;
@@ -183,13 +229,7 @@ footer a:hover {
     box-sizing: border-box;
 }
 
-/* Estilos 1 y 8 *//*vero*/
-/* .grilla div:first-child,
-.grilla div:last-child {
-    background-color: transparent;
-} */
-
-/* Estilo imágenes *//*vero*/
+/* Estilo imágenes */
 .grilla img {
     max-width: 50%;
     height: auto;
