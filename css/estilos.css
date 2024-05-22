@@ -111,7 +111,7 @@ select#actividades {
 
 /* Frases en la sección principal */
 #inicio p {
-    width: 28vw;
+    width: 30vw;
     font-size: 2.5rem;
     font-style: italic;
     padding-left: 4vw;
@@ -192,6 +192,12 @@ footer a:hover {
         display: block;
         padding: 10px 0;
     }
+
+    #inicio p {
+        width: 35vw;
+        font-size: 1.9rem;
+        padding-top: 4vh;
+    }    
 }
 
 /* Estilos rectángulo h1 */
