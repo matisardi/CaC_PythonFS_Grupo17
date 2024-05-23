@@ -240,3 +240,51 @@ footer a:hover {
     max-width: 50%;
     height: auto;
 }
+
+/* vero: Estilos para grilla Consejos */
+
+.texto-imagen-grilla {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+    img {
+    width: 30%;
+    height: auto;
+    border-radius: 1px;
+    display: block;
+    margin: 0 auto;
+}
+    .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #333;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 20px;
+    }
+}
+.texto-imagen-grilla .texto h2 {
+    margin-bottom: 5px; /* Reducir el margen inferior del título */
+    margin-top: 5px; /* Añadir un pequeño espacio entre la imagen y el título */
+    color: #073d12;
+}
+
+.texto-imagen-grilla .texto h3 {
+    margin-bottom: 3px; /* Reducir el margen inferior del subtítulo */
+    margin-top: 20px; /* Añadir un pequeño espacio entre el título y el subtítulo */
+    color: #073d12;
+}
+hr {
+    width: 100%; 
+    height: 4px; 
+    background-color: #97e763 ; 
+    margin: 20px 0; 
+}
+
+
+
+
