@@ -268,14 +268,14 @@ footer a:hover {
     }
 }
 .texto-imagen-grilla .texto h2 {
-    margin-bottom: 5px; /* Reducir el margen inferior del título */
-    margin-top: 5px; /* Añadir un pequeño espacio entre la imagen y el título */
+    margin-bottom: 5px; 
+    margin-top: 5px; 
     color: #073d12;
 }
 
 .texto-imagen-grilla .texto h3 {
-    margin-bottom: 3px; /* Reducir el margen inferior del subtítulo */
-    margin-top: 20px; /* Añadir un pequeño espacio entre el título y el subtítulo */
+    margin-bottom: 3px; 
+    margin-top: 20px; 
     color: #073d12;
 }
 hr {
