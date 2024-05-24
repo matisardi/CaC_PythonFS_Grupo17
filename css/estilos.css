@@ -12,7 +12,9 @@ header {
     background-color: rgb(7, 41, 18); /* Color verde para el header (opcional) */
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Alinear elementos hacia los extremos */
     height: 10vh;
+    padding: 0 20px; /* Agregar espaciado a los extremos del encabezado */
 }
 
 header img {
@@ -30,6 +32,7 @@ header label {
     display: none;
     font-size: 24px;
     color: rgb(151, 231, 99);
+    margin-right: 10px;
 }
 
 /* Estilos de la navegación */
@@ -171,8 +174,10 @@ footer a:hover {
 @media screen and (max-width: 768px) {
     header label {
         display: block;
+        order: 1;
+        margin-right: 10px;
     }
-
+    
     header nav {
         display: none;
         flex-direction: column;
@@ -200,7 +205,15 @@ footer a:hover {
     }    
 }
 
-/* Estilos rectángulo h1 */
+/* Media query para pantallas medianas (tabletas) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Media query para pantallas grandes (ordenadores) */
+@media screen and (min-width: 1025px) {
+}
+
+/* vero: Estilos rectángulo h1 y h2 */
 .rectangulo-h1 {
     background-color: rgb(0, 128, 0);
     color: white;
@@ -208,7 +221,7 @@ footer a:hover {
     padding: 5px;
     margin: 0;
     font-size: 14px;
-    height: 7vh;
+    height: 5vh;
 }
 
 .rectangulo-h2 {
@@ -219,7 +232,7 @@ footer a:hover {
     margin: 0; 
 }
 
-/* Estilos grilla */
+/* vero: Estilos grilla */
 .grilla {
     display: grid;
     grid-template-columns: repeat(6, auto);
