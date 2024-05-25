@@ -195,7 +195,7 @@ footer a:hover {
 
     header nav a {
         display: block;
-        padding: 10px 0;
+        padding: 10px;
     }
 
     #inicio p {
@@ -221,7 +221,7 @@ footer a:hover {
     padding: 5px;
     margin: 0;
     font-size: 14px;
-    height: 5vh;
+    height: 6vh;
 }
 
 .rectangulo-h2 {
