@@ -63,8 +63,8 @@ header nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent; /* Fondo transparente */
-    min-width: max-content; /* Se ajusta al tamaño del texto */
+    background-color:#073d12;
+    min-width:max-content; /* Se ajusta al tamaño del texto */
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
     border-radius: 5px; /* Bordes redondeados */
@@ -73,8 +73,9 @@ header nav a:hover {
 
 .dropdown-content a {
     color: black;
-    padding: 8px 12px; /* Espaciado interno */
+    padding: 8px 20px; /* Espaciado interno */
     text-decoration: none;
+    text-align: center;
     display: block;
 }
 
@@ -289,16 +290,7 @@ hr {
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 500px) {
-    header {
-        padding: 0 1vw; /* Agregar espaciado a los extremos del encabezado */
-    }
-
-    header label {
-        display: block;
-        order: 1;
-        margin-right: 10px;
-    }
-    
+    /* Estilos del menú desplegable */
     header nav {
         display: none;
         flex-direction: column;
@@ -317,11 +309,26 @@ hr {
     header nav a {
         display: block;
         padding: 10px;
+        margin: 5px 0; /* Agregar espacio entre enlaces */
+    }
+
+    .dropdown-content {
+        min-width: 100%; /* Ajustar el ancho del menú desplegable */
     }
 
     #inicio p {
-        width: 36vw;
+        width: 90%; /* Ajustar el ancho del texto en la sección principal */
         font-size: 1.9rem;
         padding-top: 4vh;
-    }    
+    }
+
+    /* Ajuste del checkbox de menú */
+    header input[type="checkbox"] {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+        cursor: pointer;
+    }
 }

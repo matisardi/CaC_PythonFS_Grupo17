@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilosactividades.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <title>Deportes al Aire Libre - Running</title>
+</head>
+<body>
+    <header>
+        <!-- Encabezado común -->
+        <a href="../index.html"><img src="../img/logo-deporte-outdoors-blanco.png" alt="Logo"></a>
+        <label for="menu-toggle">&#9776;</label>
+        <nav>
+            <!-- Menú de navegación común -->
+            <a href="../index.html">HOME</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">ACTIVIDADES</a>
+                    <div class="dropdown-content">
+                        <a href="./Roller.html">Roller</a>
+                        <a href="./Running.html">Running</a>
+                        <a href="./Ciclismo.html">Ciclismo</a>
+                        <a href="./football.html">Football</a>
+                        <a href="./Skate.html">Skate</a>
+                        <a href="./trainer.html">Trainer</a>
+                    </div>
+                </div>
+            <a href="./registro.html">REGISTRO</a>
+            <a href="./consejos.html">CONSEJOS</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <h2>Running</h2>
+                <p>El running es un deporte versátil y accesible que ofrece numerosos beneficios para la salud física y mental. Con una mínima inversión en equipamiento y la posibilidad de correr en casi cualquier lugar, es una actividad ideal para mejorar el bienestar general y mantenerse en forma. Además, la variedad de modalidades y competiciones disponibles permite que los corredores de todos los niveles encuentren formas de disfrutar y desafiarse a sí mismos.</p>
+                <br>
+                <h3>Tipos de Running</h3>
+                <ul>
+                    <li><strong>Carreras de Calle (Road Running):</strong> Realizadas en superficies pavimentadas, son las más comunes y accesibles. Incluyen distancias como 5K, 10K, medias maratones (21.0975 km) y maratones completos (42.195 km).</li>
+                    <li><strong>Trail Running:</strong> Se realiza en senderos naturales con terrenos irregulares, a menudo en montañas o bosques. Desafía a los corredores con obstáculos naturales como rocas, raíces y cambios de elevación.</li>
+                    <li><strong>Correr en Pista (Track Running):</strong> Realizado en pistas de atletismo, es ideal para entrenamientos de velocidad y competiciones organizadas.</li>
+                    <li><strong>Correr en Cinta (Treadmill Running): </strong>Hecho en una cinta de correr en un entorno controlado, a menudo en gimnasios o en casa. Es útil para entrenamientos específicos y en condiciones climáticas adversas.</li>
+                </ul>
+                <br>
+                <h3>Beneficios</h3>
+                <ul>
+                    <li>Mejora la coordinación y el equilibrio</li>
+                    <li>Fortalece los músculos</li>
+                    <li>Cardiovascular y resistencia</li>
+                    <li>Desarrollo de habilidades motoras y reflejos</li>
+                    <li>Creatividad y expresión personal</li>
+                </ul>
+                <br>
+                <h3>Lugares para practicar</h3>
+                <p>Los mejores circuitos de Running en la ciudad son:</p>
+                <ul>
+                    <li><b>Palermo - 9 km</b></li>
+                    <p>Punto de salida: Centro de Información Turística (CIT) Planetario. Av. Sarmiento 4200 y av. Figueroa Alcorta. <br><br>
+
+                        Recorrido: MALBA, Jardín Japonés, Planetario, Rosedal de Palermo, Monumento a los Españoles, Museo de Arte Decorativo, Museo Nacional de Bellas Artes, Facultad de Derecho. <br><br>
+                        
+                        Cuándo: 2º sábado y 4º domingo del mes a las 10 horas.</p>
+                    <li><b>Puerto Madero - 6 km</b></li>
+                    <p>Punto de salida: CIT Puerto Madero. Manuela Gorriti 200. <br><br>
+
+                        Recorrido: Puente de la Mujer, Parque Mujeres Argentinas, Monumento al Tango y Monumento a Fangio, Iglesia Nuestra Señora de la Esperanza, Reserva Ecológica, Glorieta, Museo Fortabat. <br><br>
+                        
+                        Cuándo: 3º sábado y 1º y 5º domingo del mes a las 10 horas.
+                    </p>
+                    <li><b>La Boca - 7km</b></li>
+                    <p>Punto de salida: CIT Caminito. Av. Don Pedro de Mendoza 1830. <br><br>
+
+                        Recorrido: Palacio Lezama, Usina del Arte, Casa Amarilla, Estadio Boca Juniors, Caminito, Puente Nicolás Avellaneda. <br><br>
+                        
+                        Cuándo: 1º y 5º sábado y 3º domingo del mes a las 10 horas.</p>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="../img/running.jpg" alt="Imagen de Running">
+            </div>
+        </div>
+        <div class="comments">
+            <h3>Comentarios</h3>
+            <form id="comment-form">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="comment">Comentario:</label><br>
+                <textarea id="comment" name="comment" rows="4"></textarea><br>
+                <input type="submit" value="Enviar comentario">
+            </form>
+            <div class="comment-list" id="comment-list">
+                <!-- Aquí se mostrarán los comentarios ingresados -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Deportes al Aire Libre. Todos los derechos reservados.</p>
+        <p>
+            <a href="">Contacto</a> | 
+            <a href="">Política de Privacidad</a> | 
+            <a href="">Términos y Condiciones</a>
+        </p>
+    </footer>
+    <script src="../js/actividades.js"></script>
+</body>
+</html>
