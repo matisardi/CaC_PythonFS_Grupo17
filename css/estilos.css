@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: space-between; /* Alinear elementos hacia los extremos */
     height: 10vh;
-    padding: 0 20px; /* Agregar espaciado a los extremos del encabezado */
+    padding: 0 2vw; /* Agregar espaciado a los extremos del encabezado */
 }
 
 header img {
@@ -37,7 +37,6 @@ header label {
 
 /* Estilos de la navegación */
 header nav {
-    padding: 0 10px;
     flex-grow: 1;
     display: flex;
     justify-content: flex-end; 
@@ -45,10 +44,10 @@ header nav {
 }
 
 header nav a {
-    margin-left: 50px; /* Espacio entre los enlaces */
+    margin-left: 5vw; /* Espacio entre los enlaces */
     color: rgb(151, 231, 99); /* Color verde para el header (opcional) */
     text-decoration: none;
-    font-size: 14px; /* Tamaño de tipografía */
+    font-size: 16px; /* Tamaño de tipografía */
 }
 
 header nav a:hover {
@@ -108,7 +107,7 @@ select#actividades {
     background-image: url(../img/sport-running-00.jpg);
     background-size: cover;
     background-position: center;
-    height: 83vh;
+    height: 82vh;
     transition: background-image 2s; /* transición entre imágenes */
 }
 
@@ -170,49 +169,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Media query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    header label {
-        display: block;
-        order: 1;
-        margin-right: 10px;
-    }
-    
-    header nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgb(7, 41, 18);
-        text-align: center;
-    }
-
-    header nav.active {
-        display: flex;
-    }
-
-    header nav a {
-        display: block;
-        padding: 10px;
-    }
-
-    #inicio p {
-        width: 35vw;
-        font-size: 1.9rem;
-        padding-top: 4vh;
-    }    
-}
-
-/* Media query para pantallas medianas (tabletas) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-/* Media query para pantallas grandes (ordenadores) */
-@media screen and (min-width: 1025px) {
-}
-
 /* vero: Estilos rectángulo h1 y h2 */
 .rectangulo-h1 {
     background-color: rgb(0, 128, 0);
@@ -221,7 +177,7 @@ footer a:hover {
     padding: 5px;
     margin: 0;
     font-size: 14px;
-    height: 6vh;
+    height: 8vh;
 }
 
 .rectangulo-h2 {
@@ -269,7 +225,7 @@ footer a:hover {
     border-radius: 1px;
     display: block;
     margin: 0 auto;
-}
+    }
     .texto {
     display: flex;
     flex-direction: column;
@@ -280,6 +236,7 @@ footer a:hover {
     margin-right: 20px;
     }
 }
+
 .texto-imagen-grilla .texto h2 {
     margin-bottom: 5px; 
     margin-top: 5px; 
@@ -291,6 +248,7 @@ footer a:hover {
     margin-top: 20px; 
     color: #073d12;
 }
+
 hr {
     width: 100%; 
     height: 4px; 
@@ -298,6 +256,72 @@ hr {
     margin: 20px 0; 
 }
 
+/* Media query para pantallas medianas (tabletas) */
+@media screen and (max-width: 768px) {
+    header {
+        height: 8vh;
+        padding: 0 1vw; /* Agregar espaciado a los extremos del encabezado */
+    }
 
+    header img {
+        height: 40px;
+        margin: 2px;
+    }
+    header nav a {
+        margin-left: 3vw; /* Espacio entre los enlaces */
+        font-size: 13px; /* Tamaño de tipografía */
+    }
+    .rectangulo-h1 {
+        font-size: 11px;
+        height: 6vh;
+    }
+    #inicio {
+        height: 86vh;
+    }
 
+    #inicio p {
+        width: 33vw;
+        font-size: 2.2rem;
+        padding-top: 5vh;
+    }    
 
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 500px) {
+    header {
+        padding: 0 1vw; /* Agregar espaciado a los extremos del encabezado */
+    }
+
+    header label {
+        display: block;
+        order: 1;
+        margin-right: 10px;
+    }
+    
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(7, 41, 18);
+        text-align: center;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    #inicio p {
+        width: 36vw;
+        font-size: 1.9rem;
+        padding-top: 4vh;
+    }    
+}
